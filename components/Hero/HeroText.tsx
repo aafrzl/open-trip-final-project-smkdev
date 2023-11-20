@@ -13,7 +13,7 @@ export default function HeroText() {
         type: 'spring',
         stiffness: 50,
       }}
-      className="absolute top-[40%] left-[5%] md:left-[20%]">
+      className="absolute top-[40%] md:left-[20%]">
       <h1 className="uppercase font-bold text-center md:text-start text-5xl text-white">
         Never Stop <br /> Exploring the World
       </h1>

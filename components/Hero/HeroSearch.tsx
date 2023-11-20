@@ -14,7 +14,7 @@ export default function HeroSearch() {
         type: 'spring',
         stiffness: 50,
       }}
-      className="shadow-md flex items-center justify-between bg-white absolute top-[94%] lg:left-[25%] lg:right-[25%] md:left-[10%] md:right-[10%] p-5 gap-x-2 md:gap-x-5 md:w-[80%] xl:w-[50%] rounded-md w-full">
+      className="shadow-md flex items-center justify-between bg-white absolute top-[94%] lg:left-[25%] lg:right-[25%] md:left-[10%] md:right-[10%] p-5 gap-x-2 md:gap-x-5 md:w-[80%] xl:w-[50%] rounded-md min-w-fit">
       <Input
         type="text"
         label="Tujuan"
