@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import {
   Button,
   Input,
@@ -13,29 +14,21 @@ import {
 } from '@nextui-org/react';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { CompassIcon } from '../Icons/Icons';
-import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       isBlurred
       isBordered
-      maxWidth="2xl"
-      as={motion.div}
-      initial={{ opacity: 0, y: -100 }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        transition: { duration: 1, type: 'tween', stiffness: 50 },
-      }}>
+      maxWidth="2xl">
       <NavbarContent
         className="hidden sm:flex gap-4"
         justify="start">
@@ -97,14 +90,17 @@ export default function Navigation() {
           variant="solid"
           color="default"
           radius="lg"
-          className="font-semibold ">
+          className="font-semibold"
+          onClick={() => router.push('/login')}>
           Login
         </Button>
         <Button
           variant="solid"
           color="danger"
           radius="lg"
-          className="font-semibold hidden md:block">
+          className="font-semibold hidden md:block"
+          onClick={() => router.push('/register')}
+          >
           Sign up
         </Button>
       </NavbarContent>

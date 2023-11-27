@@ -9,7 +9,7 @@ export default function DestinasiAlamSection() {
   );
 
   return (
-    <div className="flex flex-col justify-center items-center mx-auto container mt-24 p-2">
+    <div className="flex flex-col justify-center items-center mx-auto container mt-24 mb-48 p-2">
       <div className="flex flex-col md:flex-row gap-y-3 items-center justify-between w-full mb-5">
         <h2 className="font-bold text-xl">Menyatu Dengan Alam</h2>
         <div className="inline-flex items-center gap-x-2">
