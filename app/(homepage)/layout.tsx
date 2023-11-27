@@ -1,7 +1,5 @@
 import Footer from '@/components/Footer/Footer';
 import Navigation from '@/components/Navbar/Navigation';
-import React, { Fragment } from 'react';
-
 interface Props {
   children: React.ReactNode;
 }

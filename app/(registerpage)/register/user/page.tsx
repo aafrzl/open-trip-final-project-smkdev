@@ -2,6 +2,7 @@
 
 import InputPassword from '@/components/ui/InputPassword';
 import { Button, Input } from '@nextui-org/react';
+import Link from 'next/link';
 
 export default function UserRegister() {
   return (
@@ -37,6 +38,18 @@ export default function UserRegister() {
             Register
           </Button>
         </form>
+        <div className="flex items-center justify-between w-full">
+          <div className="inline-flex items-center gap-x-1">
+            <p className="text-[#8F8F8F] text-base font-normal">
+              Have an account?
+            </p>
+            <Link
+              href={'/login'}
+              className="text-main">
+              Login here
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

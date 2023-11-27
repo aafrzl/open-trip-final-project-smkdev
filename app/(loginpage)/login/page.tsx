@@ -1,6 +1,5 @@
 import { Logo } from '@/components/Icons/Icons';
 import FormLogin from '@/components/Login/FormLogin';
-import React from 'react';
 
 export default function LoginPage() {
   return (
