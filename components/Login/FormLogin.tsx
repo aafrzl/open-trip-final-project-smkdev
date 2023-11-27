@@ -1,15 +1,8 @@
-'use client';
-
 import { Button, Input } from '@nextui-org/react';
-import { Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
-import { useState } from 'react';
+import InputPassword from '../ui/InputPassword';
 
 export default function FormLogin() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisibility = () => setIsVisible(!isVisible);
-
   return (
     <div className="flex flex-col items-center justify-center gap-y-10 w-[80%] lg:w-1/2">
       <form className="flex flex-col gap-y-10 w-full">
@@ -20,26 +13,7 @@ export default function FormLogin() {
           radius="sm"
           size="lg"
         />
-        <Input
-          label="Password"
-          labelPlacement="outside"
-          placeholder="Password"
-          radius="sm"
-          size="lg"
-          endContent={
-            <button
-              className="focus:outline-none"
-              type="button"
-              onClick={toggleVisibility}>
-              {isVisible ? (
-                <EyeOff className="text-2xl text-default-400 pointer-events-none" />
-              ) : (
-                <Eye className="text-2xl text-default-400 pointer-events-none" />
-              )}
-            </button>
-          }
-          type={isVisible ? 'text' : 'password'}
-        />
+        <InputPassword />
         <Button
           color="danger"
           radius="sm"
@@ -59,7 +33,7 @@ export default function FormLogin() {
             Don’t have an account?
           </p>
           <Link
-            href={'/register/user'}
+            href={'/register'}
             className="text-main">
             Register here
           </Link>

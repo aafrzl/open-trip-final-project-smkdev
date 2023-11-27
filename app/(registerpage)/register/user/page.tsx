@@ -1,16 +1,11 @@
 'use client';
 
+import InputPassword from '@/components/ui/InputPassword';
 import { Button, Input } from '@nextui-org/react';
-import { Eye, EyeOff } from 'lucide-react';
-import { useState } from 'react';
 
 export default function UserRegister() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisibility = () => setIsVisible(!isVisible);
-
   return (
-    <div className="h-screen bg-[url('.//../public/images/register-bg.jpg')] bg-cover flex items-center justify-start">
+    <div className="h-screen bg-register-bg bg-cover flex items-center justify-start">
       <div className="flex flex-col items-start justify-center bg-zinc-50 w-[31rem] mx-10 gap-y-14 rounded-xl p-6 lg:p-14">
         <h2 className="text-3xl font-medium">Choose Registration</h2>
         <form
@@ -24,26 +19,7 @@ export default function UserRegister() {
             radius="sm"
             size="lg"
           />
-          <Input
-            label="Password"
-            labelPlacement="outside"
-            placeholder="Password"
-            radius="sm"
-            size="lg"
-            endContent={
-              <button
-                className="focus:outline-none"
-                type="button"
-                onClick={toggleVisibility}>
-                {isVisible ? (
-                  <EyeOff className="text-2xl text-default-400 pointer-events-none" />
-                ) : (
-                  <Eye className="text-2xl text-default-400 pointer-events-none" />
-                )}
-              </button>
-            }
-            type={isVisible ? 'text' : 'password'}
-          />
+          <InputPassword />
           <Input
             label="Email"
             type="email"
@@ -65,5 +41,3 @@ export default function UserRegister() {
     </div>
   );
 }
-
-// https://dsc.gg/coding-with-afrizal

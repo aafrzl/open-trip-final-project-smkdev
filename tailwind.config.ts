@@ -13,6 +13,11 @@ const config: Config = {
       colors: {
         main: '#FF385C',
       },
+      backgroundImage: {
+        'hero-bg': "url('.//../public/images/hero-image.jpg')",
+        'login-bg': "url('.//../public/images/login-background.png')",
+        'register-bg': "url('.//../public/images/register-bg.jpg')"
+      },
     },
   },
   darkMode: 'class',

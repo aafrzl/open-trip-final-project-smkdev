@@ -8,7 +8,7 @@ export default function RegiterPage() {
   const router = useRouter();
 
   return (
-    <div className="h-screen bg-[url('.//../public/images/register-bg.jpg')] bg-cover flex items-center justify-start">
+    <div className="h-screen bg-register-bg bg-cover flex items-center justify-start">
       <div className="flex flex-col items-start justify-center bg-zinc-50 w-[31rem] mx-10 gap-y-14 rounded-xl p-14">
         <h2 className="text-3xl font-medium">Choose Registration</h2>
         <Button
