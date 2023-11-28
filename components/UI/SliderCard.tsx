@@ -32,6 +32,7 @@ export default function SliderCard({ data }: SliderCardProps) {
       {data.map((destination) => (
         <SwiperSlide key={destination.id}>
           <CardDestination
+            id={destination.id}
             title={destination.title}
             price={destination.price}
             rating={destination.rating}

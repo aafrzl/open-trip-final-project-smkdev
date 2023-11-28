@@ -9,35 +9,35 @@ export default function Footer() {
 
   return (
     <footer className="flex flex-col">
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-between mx-auto container w-full py-24 gap-8">
+      <div className="flex flex-col lg:flex-row items-start justify-center lg:items-start lg:justify-between mx-10 container w-full py-24 gap-8 lg:mx-auto">
         <Logo />
-        <div className="flex flex-col items-center lg:items-start gap-8">
+        <div className="flex flex-col items-start gap-8">
           <h3 className="text-xl font-normal text-center lg:text-start">
             Company
           </h3>
-          <div className="flex flex-col text-center lg:text-start justify-center lg:justify-start gap-3">
+          <div className="flex flex-col justify-start gap-3">
             <p className="text-sm">About</p>
             <p className="text-sm">Press</p>
             <p className="text-sm">Careers</p>
             <p className="text-sm">Contact</p>
           </div>
         </div>
-        <div className="flex flex-col lg:items-start items-center gap-8">
+        <div className="flex flex-col items-start gap-8">
           <h3 className="text-xl font-normal text-center lg:text-start">
             Support
           </h3>
-          <div className="flex flex-col text-center lg:text-start lg:justify-start gap-3">
+          <div className="flex flex-col justify-start gap-3">
             <p className="text-sm">Help Center</p>
             <p className="text-sm">Tems of Service</p>
             <p className="text-sm">Legal</p>
             <p className="text-sm">Privacy Policity</p>
           </div>
         </div>
-        <div className="flex flex-col items-center lg:items-start gap-8">
+        <div className="flex flex-col items-start gap-8">
           <h3 className="text-xl font-normal text-center lg:text-start">
             Kerja Sama
           </h3>
-          <div className="flex flex-col text-center lg:text-start justify-center lg:justify-start gap-3">
+          <div className="flex flex-col justify-start gap-3">
             <Link href={'/register/hoster'}>
               <p className="text-sm">Daftar Jadi Hoster</p>
             </Link>
@@ -55,6 +55,7 @@ export default function Footer() {
               width={150}
               height={50}
               priority
+              className='object-contain w-full h-full'
             />
             <Image
               src="/store-apple.svg"
@@ -62,6 +63,7 @@ export default function Footer() {
               width={150}
               height={50}
               priority
+              className='object-contain w-full h-full'
             />
           </div>
         </div>
