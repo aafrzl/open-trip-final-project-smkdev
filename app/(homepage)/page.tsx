@@ -6,6 +6,9 @@ import DestinasiGunungSection from '@/components/SectionHomePage/DestinasiGunung
 import DestinasiLautSection from '@/components/SectionHomePage/DestinasiLautSection';
 import DestinasiPopularSection from '@/components/SectionHomePage/DestinasiPopularSection';
 
+//TODO: Add Search Modal
+//TODO: Add Detail Destinasi Dynamic Page using NextJS Dynamic Route
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">

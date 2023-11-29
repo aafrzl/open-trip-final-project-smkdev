@@ -11,6 +11,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
 } from '@nextui-org/react';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
@@ -63,12 +66,41 @@ export default function Navigation() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            variant="light"
-            isIconOnly
-            size="sm">
-            <Search />
-          </Button>
+          <Popover>
+            <PopoverTrigger>
+              <Button
+                variant="light"
+                isIconOnly
+                size="sm">
+                <Search />
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="p-4">
+              <div className="flex items-center gap-x-2">
+                <Input
+                  type="text"
+                  placeholder="Semua Tempat"
+                  labelPlacement='inside'
+                  label="Tujuan"
+                  size='lg'
+                  startContent={<Search />}
+                />
+                <Input
+                  type="date"
+                  labelPlacement='inside'
+                  label="Jadwal"
+                  size='lg'
+                  startContent={<Search />}
+                />
+                <Button
+                  color="danger"
+                  size="lg"
+                  radius="md">
+                  Cari
+                </Button>
+              </div>
+            </PopoverContent>
+          </Popover>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="center">
@@ -99,8 +131,7 @@ export default function Navigation() {
           color="danger"
           radius="lg"
           className="font-semibold hidden md:block"
-          onClick={() => router.push('/register')}
-          >
+          onClick={() => router.push('/register')}>
           Sign up
         </Button>
       </NavbarContent>

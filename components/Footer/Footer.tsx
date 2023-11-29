@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="flex flex-col">
-      <div className="flex flex-col lg:flex-row items-start justify-center lg:items-start lg:justify-between mx-10 container w-full py-24 gap-8 lg:mx-auto">
+      <div className="flex flex-col lg:flex-row items-start justify-center lg:items-start lg:justify-between container p-5 lg:py-24 gap-8 lg:mx-auto">
         <Logo />
         <div className="flex flex-col items-start gap-8">
           <h3 className="text-xl font-normal text-center lg:text-start">
