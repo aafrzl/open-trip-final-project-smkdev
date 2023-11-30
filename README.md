@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
+Ini adalah website Open Trip yang dibuat dengan menggunakan Next.js, NextUI, dan TailwindCSS. Website ini dibuat untuk memenuhi tugas final project bootcamp Frontend Developer [SMKDEV](https://smk.dev/). Pembelajaran yang didapat dari pembuatan website ini adalah:
+- [x] Membuat website dengan menggunakan Next.js
+- [x] Membuat website dengan menggunakan NextUI
+- [x] Membuat website dengan menggunakan TailwindCSS
+- [x] Melatih kemampuan dalam slicing design UI/UX ke dalam website
+- [x] Melatih kemampuan dalam membuat website dengan menggunakan ReactJS
+- [x] Membuat website dengan data dummy sendiri
+- [x] Membuat website dengan menggunakan TypeScript
+
+## Features
+- [x] Homepage Destinasi
+- [x] Detail Destinasi
+- [x] Login
+- [x] Register User & Hoster
+- [x] Destinasi Page
+
+## Tech Stack
+- [x] Next.js 14 (App Routes)
+- [x] NextUI (UI Framework)
+- [x] TailwindCSS (CSS Framework)
+- [x] TypeScript (Programming Language)
+- [x] ReactJS (JavaScript Library)
+- [x] Leaflet (Map Library)
+- [x] React Leaflet (Map Library)
+- [x] Lucide Icons (Icon Library)
 
 ## Getting Started
 
