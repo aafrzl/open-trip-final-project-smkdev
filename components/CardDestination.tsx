@@ -9,7 +9,7 @@ import {
   CardHeader,
 } from '@nextui-org/react';
 import Image from 'next/image';
-import { StarIcon } from '../Icons/Icons';
+import { StarIcon } from './Icons/Icons';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 

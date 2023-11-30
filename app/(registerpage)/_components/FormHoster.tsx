@@ -1,5 +1,5 @@
 import { Button, Input, Textarea } from '@nextui-org/react';
-import InputPassword from '../ui/InputPassword';
+import InputPassword from './InputPassword';
 import InputFile from './InputFile';
 import SelectorInput from './SelectorInput';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileIcon } from '../Icons/Icons';
+import { FileIcon } from '../../../components/Icons/Icons';
 
 interface InputFileProps {
   label: string;

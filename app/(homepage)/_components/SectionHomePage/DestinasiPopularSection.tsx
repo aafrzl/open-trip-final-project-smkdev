@@ -1,7 +1,7 @@
 import { dataDestinations } from '@/lib/dataDummy';
 import { Destination } from '@/types/destinations';
 import { ArrowRight } from 'lucide-react';
-import SliderCard from '../ui/SliderCard';
+import SliderCard from '../../../../components/SliderCard';
 
 export default function DestinasiPopularSection() {
   const dataDestinationsPopular = dataDestinations.filter(

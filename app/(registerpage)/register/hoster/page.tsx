@@ -1,4 +1,4 @@
-import FormHoster from '@/components/Register/FormHoster'
+import FormHoster from '@/app/(registerpage)/_components/FormHoster'
 import React from 'react'
 
 export default function PageRegisterHoster() {

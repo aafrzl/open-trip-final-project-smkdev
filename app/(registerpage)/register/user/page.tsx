@@ -1,6 +1,6 @@
 'use client';
 
-import InputPassword from '@/components/ui/InputPassword';
+import InputPassword from '@/app/(registerpage)/_components/InputPassword';
 import { Button, Input } from '@nextui-org/react';
 import Link from 'next/link';
 

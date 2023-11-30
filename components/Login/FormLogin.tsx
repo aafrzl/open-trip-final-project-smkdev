@@ -1,6 +1,6 @@
 import { Button, Input } from '@nextui-org/react';
 import Link from 'next/link';
-import InputPassword from '../ui/InputPassword';
+import InputPassword from '../../app/(registerpage)/_components/InputPassword';
 
 export default function FormLogin() {
   return (

@@ -1,13 +1,10 @@
-import CallToAction from '@/components/CTA/CallToAction';
-import Hero from '@/components/Hero/Hero';
-import HeroSearch from '@/components/Hero/HeroSearch';
-import DestinasiAlamSection from '@/components/SectionHomePage/DestinasiAlamSection';
-import DestinasiGunungSection from '@/components/SectionHomePage/DestinasiGunungSection';
-import DestinasiLautSection from '@/components/SectionHomePage/DestinasiLautSection';
-import DestinasiPopularSection from '@/components/SectionHomePage/DestinasiPopularSection';
-
-//TODO: Add Search Modal
-//TODO: Add Detail Destinasi Dynamic Page using NextJS Dynamic Route
+import CallToAction from './_components/CTA/CallToAction';
+import Hero from './_components/Hero/Hero';
+import HeroSearch from './_components/Hero/HeroSearch';
+import DestinasiAlamSection from './_components/SectionHomePage/DestinasiAlamSection';
+import DestinasiGunungSection from './_components/SectionHomePage/DestinasiGunungSection';
+import DestinasiLautSection from './_components/SectionHomePage/DestinasiLautSection';
+import DestinasiPopularSection from './_components/SectionHomePage/DestinasiPopularSection';
 
 export default function Home() {
   return (

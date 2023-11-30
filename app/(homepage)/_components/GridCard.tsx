@@ -1,4 +1,4 @@
-import CardDestination from '@/components/ui/CardDestination';
+import CardDestination from '@/components/CardDestination';
 import { dataDestinations } from '@/lib/dataDummy';
 import React from 'react';
 
